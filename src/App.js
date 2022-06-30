@@ -8,7 +8,7 @@ import KitchenOutlinedIcon from '@mui/icons-material/KitchenOutlined';
 // import custom components
 import Bar from "./components/Bar/Bar";
 import TestAPI from "./pages/TestAPI/TestAPI";
-import About from "./pages/about/about";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/home/home";
 import WeatherApp from "./pages/WeatherApp/WeatherApp";
 import Rooms from "./pages/Rooms/Rooms";
@@ -17,15 +17,15 @@ import NotFound from "./pages/NotFound/NotFound";
 
 
 //import avatars
-import ramadan from '../src/assests/smartHomeTeam/ramadan.jpg';
-import nabil from '../src/assests/smartHomeTeam/nabil.jpg';
-import sabek from '../src/assests/smartHomeTeam/sabek.jpg';
-import mohamedNour from '../src/assests/smartHomeTeam/mohamedNour.jpg';
-import eman from '../src/assests/smartHomeTeam/eman.jpeg';
-import bebars from '../src/assests/smartHomeTeam/bebars.jpg';
-import alfy from '../src/assests/smartHomeTeam/alfy.JPG';
-import salma from '../src/assests/smartHomeTeam/salma.jpg';
-import blank_avatar from '../src/assests/smartHomeTeam/blank_avatar.png';
+import ramadan from '../src/assests/techHomeTeam/mahmoudRamadan.jpg';
+import nabil from '../src/assests/techHomeTeam/mohamedNabil.jpg';
+import sabek from '../src/assests/techHomeTeam/mohamedSabek.jpg';
+import mohamedNour from '../src/assests/techHomeTeam/mohamedNour.jpg';
+import eman from '../src/assests/techHomeTeam/eman.jpeg';
+import bebars from '../src/assests/techHomeTeam/bebars.jpg';
+import alfy from '../src/assests/techHomeTeam/alfy.JPG';
+import salma from '../src/assests/techHomeTeam/salma.jpg';
+import blank_avatar from '../src/assests/techHomeTeam/blank_avatar.png';
 
 
 const HomesDb = [
@@ -77,7 +77,7 @@ const HomesDb = [
   }
 ]
 
-const smartHomeTeamData = [
+const techHomeTeamData = [
   {
     id: 1,
     name: 'Mahmoud Abdallah',
@@ -163,7 +163,7 @@ const App = () => {
         <Route path="/rooms" element={<Rooms HomesDb={HomesDb} />} />
         <Route path="/weather-app" element={<WeatherApp />} />
         <Route path="/test-api" element={<TestAPI />} />
-        <Route path="/about" element={<About smartHomeTeamData={smartHomeTeamData} />} />
+        <Route path="/about" element={<AboutUs techHomeTeamData={techHomeTeamData} />} />
         <Route path="*" element={<Navigate to="/not-found" />} />
         <Route path="/not-found" element={<NotFound />} />
       </Routes>
