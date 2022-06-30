@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Typography, Box, Button, InputLabel, FormControl, Select, MenuItem, Radio, RadioGroup, FormControlLabel, FormLabel, TextField } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
+import { Typography, Box, Button, FormControl, Radio, RadioGroup, FormControlLabel, FormLabel, TextField } from "@mui/material";
 import axios from "axios";
 // import axios from '../../lib/generalAPI';
 
@@ -9,8 +8,6 @@ const PostStatus = ({ Topics, getStyles }) => {
     const [topicName, setTopicName] = useState('');
     // const [status, setStatus] = useState(true);
     const [message, setMessage] = useState(null);
-    const theme = useTheme();
-
     const handleChange = (event) => {
         setTopicName(event.target.value);
     };

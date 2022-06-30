@@ -1,6 +1,6 @@
 import classes from './WeatherApp.module.css'
 import SearchIcon from '@mui/icons-material/Search';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 

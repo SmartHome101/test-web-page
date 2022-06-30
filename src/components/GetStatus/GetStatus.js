@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
-import { Typography, Box, Button, InputLabel, FormControl, Select, MenuItem, TextField } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
+import { Typography, Box, Button, FormControl, TextField } from "@mui/material";
+// import { useTheme } from '@mui/material/styles';
 import TopicStatus from "../TopicStatus/TopicStatus";
 // import axios from '../../lib/generalAPI';
 import axios from "axios";
@@ -13,7 +13,7 @@ const GetStatus = ({ Topics, getStyles }) => {
         payload: { message: null },
         lastModifiedTime: ""
     });
-    const theme = useTheme();
+    // const theme = useTheme();
     const handleChange = (event) => {
         setTopicName(event.target.value);
     };
