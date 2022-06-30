@@ -36,7 +36,7 @@ const GetStatus = ({ Topics, getStyles }) => {
             {
                 headers: {
                     'Content-type': 'application/json',
-                    'X-API-KEY': process.env.REACT_APP_GATEWAY_API_KEY_SABEK_USER,
+                    'X-API-KEY': 'rb21EUMVreCe1p3CITM54SSpxhmZMA721WlfGiV4',
                 }
             })
         return response;
