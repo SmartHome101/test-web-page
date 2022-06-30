@@ -1,0 +1,98 @@
+
+.boxContainer{
+  background-image: url('../../assests/cover2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow:10px 10px #546bbf;
+  font-size: 100%;
+  margin: 30px;
+}
+.sec {
+  font-family: "Raleway", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+  word-wrap: break-word;
+  
+}
+.sec h2 {
+  font-weight: 200;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.sec ul {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+}
+.sec ul li {
+  border-radius: 20px;
+  margin-right: 15px;
+  padding: 40px;
+  width: 300px;
+  transition: box-shadow 0.3s;
+}
+.sec ul li:hover {
+  cursor: pointer;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.sec ul li:hover span {
+  color: hsl(64, 100%, 60%);
+  font-size: larger;
+  
+}
+.sec ul li:hover p {
+  color: #fff;
+  font-size: 100%;
+}
+.sec ul li:hover h3 {
+  color: #fff;
+  font-size: 160%;
+  font-weight: bold;
+}
+.sec ul li:hover h3:after {
+  width: 25px;
+}
+.sec ul li span {
+  font-size: 2.6em;
+  display: block;
+  transition: color 0.3s;
+  color: #f2db09;
+}
+.sec ul li span:before,
+.sec ul li span:after {
+  position: static;
+}
+.sec ul li h3 {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  margin: 24px 0;
+  transition: color 0.3s;
+}
+.sec ul li h3:after {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  display: block;
+  width: 40px;
+  height: 1px;
+  transition: width 0.5s;
+}
+.sec ul li p {
+  color: #fff;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 16px 0;
+  transition: color 0.5s;
+}

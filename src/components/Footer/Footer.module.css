@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.copyrightLink,
+.copyrightLink:hover,
+.copyrightLink:visited,
+.copyrightLink:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.textmarginBottom {
+  margin-bottom: 0;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+.textmarginTop {
+  margin-top: 5px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
